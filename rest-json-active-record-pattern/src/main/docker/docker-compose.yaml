@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  db:
+    image: mariadb:latest
+    container_name: maria_pose
+    environment:
+      MARIADB_ROOT_PASSWORD: developer
+      MARIADB_DATABASE: fruit
+      MARIADB_USER: developer
+      MARIADB_PASSWORD: developer
+    ports:
+      - 3306:3306
